@@ -1,7 +1,7 @@
 package com.company;
 import java.util.Scanner;
 
-/*ArrayFunUser:
+/*ArrayFun5Words:
 /*1. read five words from the user
 /*2. put the five words in an array
 /*3. print the array elements to the screen
