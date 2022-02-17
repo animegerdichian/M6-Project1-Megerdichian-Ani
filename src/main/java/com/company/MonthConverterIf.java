@@ -13,9 +13,6 @@ public class MonthConverterIf {
 
     public static void main(String[] args) {
 
-        // Array of months
-        String months [] = {"January", "February", "March", "April", "May", "June",
-                            "July", "August", "September", "October", "November", "December"};
         // Initialize Scanner
         Scanner scanner = new Scanner(System.in);
         // Prompt user for input
@@ -23,11 +20,50 @@ public class MonthConverterIf {
         // Parse user input for an integer
         int monthNumber = Integer.parseInt(scanner.nextLine());
 
-        if (monthNumber >=1 && monthNumber <= 12) {
-            System.out.println(months[monthNumber-1]);
+        // Initialize variable for output message
+        String outputMessage = "";
+
+        // Assign the correct output message
+        if(monthNumber == 1){
+            outputMessage = "January";
+        }
+        else if(monthNumber == 2){
+            outputMessage = "February";
+        }
+        else if(monthNumber == 3){
+            outputMessage = "March";
+        }
+        else if(monthNumber == 4){
+            outputMessage = "April";
+        }
+        else if(monthNumber == 5){
+            outputMessage = "May";
+        }
+        else if(monthNumber == 6){
+            outputMessage = "June";
+        }
+        else if(monthNumber == 7){
+            outputMessage = "July";
+        }
+        else if(monthNumber == 8){
+            outputMessage = "August";
+        }
+        else if(monthNumber == 9){
+            outputMessage = "September";
+        }
+        else if(monthNumber == 10){
+            outputMessage = "October";
+        }
+        else if(monthNumber == 11){
+            outputMessage = "November";
+        }
+        else if(monthNumber == 12){
+            outputMessage = "December";
         }
         else{
-            System.out.println("You have entered an invalid number. You must enter a number between 1 and 12. Goodbye.");
+            outputMessage = "You have entered an invalid number. You must enter a number between 1 and 12. Goodbye.";
         }
+        // Print output
+        System.out.println(outputMessage);
     }
 }
